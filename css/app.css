@@ -1,0 +1,50 @@
+/*l'etoile cible tous les elements du site*/
+*{
+    box-sizing: border-box;
+}
+/*------------------------------------------*/
+/* Régles mobile first*/
+.banane{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+.contain{
+    display:flex;
+    flex-wrap: wrap-reverse;
+}
+h1{
+    color: red;
+}
+p{
+    font-size: 3em;
+}
+
+/*------------------------------------------*/
+/*Régles PC*/
+/*Ces régles s'appliquent au dela de 480px*/
+@media screen and (min-width:480px){
+.banane{
+     width: 33.33%
+    }
+.contain{
+    display: flex;
+    justify-content: space-around;
+    }
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 4em;
+    }
+}
+/*------------------------------------------*/
+/*Régles PC*/
+/*Ces régles s'appliquent au dela de 1024px*/
+@media screen and (min-width:1024px){
+h1{
+    text-align: center;
+    color: yellow;
+    font-size: 5em;
+}
+/*------------------------------------------*/
+
